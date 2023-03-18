@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css"/>
 
     <title>2023SHNU地师分享会</title>
@@ -143,11 +145,16 @@
     <div class="container">
         <div class="sidebar">
           <div class="contents">
-            <div class="category">网站资源</div>
-            <div class="category">数据资源</div>
-            <div class="category">工具资源</div>
-            <div class="category">技能资源</div>
-            <div class="category">其他资源</div>
+            <ul class="side-nav"> 
+                <li class="side-nav__item">网站资源</li>
+                <li class="side-nav__item">网站资源</li>
+                <li class="side-nav__item">网站资源</li>
+                <li class="side-nav__item">网站资源</li>
+                <li class="side-nav__item">网站资源</li>
+                <li class="side-nav__item">网站资源</li>
+                <li class="side-nav__item">网站资源</li>
+            </ul>
+
           </div>
           <div class="footer">
             <i class="footer-icon">icon</i>
@@ -155,46 +162,43 @@
           </div>
         </div>
         <div class="gallery">
-            <section class="section section-part1">
-                <h2 class="heading-primary">Part 1. 确立人设</h2>
-                <h3 class="heading-second">核心问题: 我在未来想做什么?</h3>
+            <section class="section section-1">
+                <h3 class="heading-secondary heading-section1">Part1: 我在未来想做什么?</h3>
                 <div class="part1-details">
-                    <div class="part1-details__method">
-                        <h4 class="heading-tertiary">手段</h4>
+                
                     <ul class="part1-details__items">
-                        <li>工作</li>
-                        <li>读研</li>
-                        <li>考公</li>
-                        <li>创业</li>
-                        <li>......</li>
+                        <li><ion-icon name="hammer-outline" class="part1-icon"></ion-icon><span>工作:  优秀中学地理教师,在重点中学任教</span></li>
+                        <li><ion-icon name="book-outline" class="part1-icon"></ion-icon><span>读研:  从事地理科学研究,当科学家</span></li>
+                        <li><ion-icon name="bag-outline" class="part1-icon"></ion-icon><span>考公:  拥有稳定的编制,平淡富足的生活</span></li>
+                        <li><ion-icon name="person-add-outline" class="part1-icon"></ion-icon><span>创业:  对抗风险,克服困难,成为有钱的老板</span></li>
+                       
         
                     </ul>
-                    </div>
-                    
-                    <div class="part1-details__aim">
-                    <h4 class="heading-tertiary">目的</h4>
-                    <ul class="part1-details__items">
-                        <li>优秀中学地理教师,在重点中学任教</li>
-                        <li>从事地理科学研究,当科学家</li>
-                        <li>拥有稳定的编制,平淡富足的生活</li>
-                        <li>对抗风险,克服困难,成为有钱的老板</li>
-                        <li>......</li>
+                   
         
-                    </ul>
-                    </div>
+                  
                 </div>
+
+            </section>
+                <section  class="section section-2">
         
-                <h3 class="heading-second">毕业生的案例</h3>
-                <embed src="./2021届shnu质量报告.pdf" type="application/pdf" width="100%" height="1200px" />
-                <h3 class="heading-second">周围同学的目的与方法</h3>
+                <h3 class="heading-secondary">Part2: SHNU毕业生概况</h3>
+                <embed src="./2021届shnu质量报告.pdf" type="application/pdf" width="80%" height="800px" class="pdf"/>
+                </section>
+
+
+            <section class="section section-3">
+                    
+                
+                <h3 class="heading-secondary">PART3: 来自地师学长学姐的分享</h3>
                 <table>
                     <tr>
-                      <td>目的</td>
-                      <td>概述</td>
-                      <td>大一</td>
-                      <td>大二</td>
-                      <td>大三</td>
-                      <td>大四</td>
+                      <th>选择</th>
+                      <th>概述</th>
+                      <th>大一</th>
+                      <th>大二</th>
+                      <th>大三</th>
+                      <th>大四</th>
                     </tr>
                     <tr>
                       <td>地理教师</td>
@@ -203,6 +207,7 @@
                         <li>学好地理专业课知识</li>
                         <li>过四级</li>
                         <li>地理家教</li>
+                        <li>结合地理教育构思科研或调研项目</li>
                       </ul></td>
                       <td><li>学好地理专业课知识</li>
                         <li>过六级</li>
@@ -309,9 +314,27 @@
                   </table>
                   
             </section>
+
+            <section class="section section-4">
+                <h3 class="heading-secondary">PART5: 人生规划-The All In One</h3>
+                <h4><a href="https://ouwen-z.notion.site/DEMO-f89c65ecdb0c4b8caf84599b4a9c3246">Notion</a></h4>
+                <h4>OKR模型 + SMART原则</h4>
+                <div>
+                    <ul>
+                        <li>增加产品销量</li> 
+                        Objective：提高产品销量
+                        Key Results：
+                        增加每周的销售量至 500 件
+                        招募 10 个新客户
+                        提高客户留存率至 80%
+                        实施促销活动，提高销售额至 $50,000
+                </ul>
+            </div>
+
+            </section>
         
             <section class="section-part2">
-                <h2>学习工具</h2>
+            <h3 class="heading-secondary">学习工具</h3>
             <div class="learning-method__cards">
                 <div class="learning-method__card">
                     <h4 class="learning-method__head">学习观 </h4>
@@ -394,19 +417,366 @@
                 </div>
             </div>
             </section>
+            <section class="section-part2">
+            <h3  class="heading-secondary">具体应用</h3>
+            <div class="learning-method__cards">
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">练习类课程学习</h4>
+                    <ul>
+                        <li>高等数学,概率论</li>
+                        <li>输入:系统的理解（康奈尔笔记法)</li>
+                        <li>输出:经典练习题</li>
+                        <li>本科:宋浩，乐经良...</li>
+                        <li>考研:张宇, 汤家...</li>
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">应用类课程的学习</h4>
+                    <ul>
+                        <li>
+                            GIS软件操作，各类编程语言
+                        </li>
+                        <li>
+                           输入:模仿书本案例实现效果
+                        </li>
+                        <li>
+                            输出:由小到大,增加或改善已有功能,熟练后自己设计项目
+                        </li>
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">识记理解类课程的学习</h4>
+                    <ul>
+                        <li>
+                            背书课（名词解释，简答题，论述题）期末考试宛如默写  !!!学习不等于记忆
+                        </li>
+                        <li>
+                            思维导图+学习闪卡+康奈尔笔记法
+                        </li>
+                        <li>
+                            1. 课堂以理解为主，笔记只记大纲
+                            2. 课后整理笔记形成复习材料（思维导图，学习闪卡，笔记）
+                            3. 期末根据复习材料复习（模拟题型自己出试卷自己练习）
+                        </li>
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">考证类课程的学习</h4>
+                        <!-- <img src="./swdt.png" width="200px"/> -->
+                        <ul>
+                            <li>
+                                
+                                早报名
+                            </li>
+                            <li>
+                                视频课程（30%）+模拟考试（70%）
+                            </li>
+                        </ul>
+                </div>
+              
+            </div>
+            </section>
+            <section class="section-part2">
+            <h3  class="heading-secondary">信息搜集与最近的AI</h3>
+            <div class="learning-method__cards">
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">怎么找东西</h4>
+                    <ul>
+                        <li>好的平台</li>
+                        <li>提高英语</li>
+                        <li>在线提问</li>
+                        <li>资源积累</li>
+
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">为什么要重视信息</h4>
+                    <ul>
+                        <li>
+                            信息茧房
+                        </li>
+                        <li>
+                           更多机会
+                        </li>
+                        <li>
+                           奖学金
+                        </li>
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">未来已来</h4>
+                    <ul>
+                        <li>
+                            chatGPT, NewBing
+                        </li>
+                        <li>
+                            Notion AI, Copilot
+                        </li>
+                        <li>
+                            工具不会取代人,只有会使用工具的人,取代不会使用工具的人
+                        </li>
+                    </ul>
+                </div>
+
+              
+            </div>
+            </section>
+            <h3 class="heading-secondary">科创竞赛目录</h3>
+            <embed src="./contest.pdf" type="application/pdf"  />
+            <section class="section-part3">
+            <h2>学习资源</h2>
+            <div class="learning-method__cards">
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">学吧导航</h4>
+                    <ul>
+                        <li>掌握知识</li>
+                        <li><a href="https://www.xue8nav.com">学习观</a></li>
+                        <li><a href="https://www.coursera.org/learn/learning-how-to-learn">Learn how to Learn - Coursera</a></li>
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">Coursera</h4>
+                    <ul>
+                        <li>
+                            学习25分钟,休息5分钟
+                        </li>
+                        <li>
+                            <a href="https://www.bilibili.com/video/BV1aG4y1b7Ez/?spm_id_from=444.41.list.card_archive.click&vd_source=97a695383c4b98a4ed8b80d5fdecc716">升级番茄钟🍅</a>
+                        </li>
+                        <li>
+                            <a href="https://www.forestapp.cc/">The Forest</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">Udemy</h4>
+                    <ul>
+                        <li>
+                            把你的学习内容解释给周围的人
+                        </li>
+                        <li>
+                            写博客
+                        </li>
+                        <li>
+                            <a href="https://www.bilibili.com/video/BV1Rt411j7cb/?spm_id_from=333.337.search-card.all.click&vd_source=97a695383c4b98a4ed8b80d5fdecc716">如何应用费曼技巧</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">中国大学MOOC</h4>
+                        <!-- <img src="./swdt.png" width="200px"/> -->
+                        <ul>
+                            <li>
+                                
+                                <a href="https://xmind.cn">软件推荐 - [xmind]</a>
+                            </li>
+                            <li>
+                                <a href="https://www.forestapp.cc/">手绘，iPad</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">学习闪卡</h4>
+                    <!-- <img src="./card.png" width="200px"/> -->
+                    <ul>
+                        <li>
+                            身份证大小的白纸（正面记录问题，反面记录答案）
+                        </li>
+                        <li>
+                            <a href="https://quizlet.com/zh-cn">手机app - quizlet</a>
+                        </li>
+                        <li>
+                            无纸化学习 - ipad(goodnotes)
+                        </li>                       
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">康奈尔笔记法</h4>
+                    <!-- <img src="./card.png" width="200px"/> -->
+                    <ul>                           
+                        <li>                                
+                            身份证大小的白纸（正面记录问题，反面记录答案）
+                        </li>
+                        <li>
+                            <a href="https://www.bilibili.com/video/BV1Ct411v78j/?spm_id_from=333.337.search-card.all.click&vd_source=97a695383c4b98a4ed8b80d5fdecc716">康奈尔笔记法（提高十倍效率）</a>
+                        </li>
+                        <li>
+                            <a href="https://lsc.cornell.edu/">康奈尔大学学习策略中心</a>
+                        </li>                                                                            
+                    </ul>
+                </div>
+            </div>
+            </section>
+            <section class="section-part4">
+            <h2>留学资源</h2>
+            <div class="learning-method__cards">
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">一亩三分地</h4>
+                    <ul>
+                        <li>定位,找信息</li>
+                        <li><a href="https://www.google.com/search?client=safari&rls=en&q=%E4%B8%80%E4%BA%A9%E4%B8%89%E5%88%86%E5%9C%B0&ie=UTF-8&oe=UTF-8">地址</a></li>
+
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">寄托天下</h4>
+                    <ul>
+                        <li>
+                            学习25分钟,休息5分钟
+                        </li>
+                        <li>
+                            <a href="https://www.gter.net">升级番茄钟🍅</a>
+                        </li>
+                        <li>
+                            <a href="https://www.forestapp.cc/">The Forest</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">GRE</h4>
+                    <ul>
+                        <li>
+                            <a href="https://pan.baidu.com/s/1xNMQ-Rdb-p4vgihxWKjgxg?pwd=3qeb">皇冠GRE</a>
+                        </li>
+                        <li>
+                            写博客
+                        </li>
+                        <li>
+                            <a href="https://pan.baidu.com/s/1xNMQ-Rdb-p4vgihxWKjgxg?pwd=3qeb">GRE资料</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">中国大学MOOC</h4>
+                        <!-- <img src="./swdt.png" width="200px"/> -->
+                        <ul>
+                            <li>
+                                
+                                <a href="https://xmind.cn">软件推荐 - [xmind]</a>
+                            </li>
+                            <li>
+                                <a href="https://www.forestapp.cc/">手绘，iPad</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">学习闪卡</h4>
+                    <!-- <img src="./card.png" width="200px"/> -->
+                    <ul>
+                        <li>
+                            身份证大小的白纸（正面记录问题，反面记录答案）
+                        </li>
+                        <li>
+                            <a href="https://quizlet.com/zh-cn">手机app - quizlet</a>
+                        </li>
+                        <li>
+                            无纸化学习 - ipad(goodnotes)
+                        </li>                       
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">康奈尔笔记法</h4>
+                    <!-- <img src="./card.png" width="200px"/> -->
+                    <ul>                           
+                        <li>                                
+                            身份证大小的白纸（正面记录问题，反面记录答案）
+                        </li>
+                        <li>
+                            <a href="https://www.bilibili.com/video/BV1Ct411v78j/?spm_id_from=333.337.search-card.all.click&vd_source=97a695383c4b98a4ed8b80d5fdecc716">康奈尔笔记法（提高十倍效率）</a>
+                        </li>
+                        <li>
+                            <a href="https://lsc.cornell.edu/">康奈尔大学学习策略中心</a>
+                        </li>                                                                            
+                    </ul>
+                </div>
+            </div>
+            </section>
+            <section class="section-part5">
+            <h2>职场资源</h2>
+            <div class="learning-method__cards">
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">地理企业招聘</h4>
+                    <ul>
+                       
+                        <li><a href="https://pan.baidu.com/s/1FKSNVSBiYA3ez1Y8UXvfjg?pwd=hrpj"></a></li>
+
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">电子笔记</h4>
+                    <ul>
+                        
+                        <li>
+                            <a href="https://pan.baidu.com/s/1q2qV7KWCfsuvzQiI70sdOA?pwd=vukr">康奈尔笔记本</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">GRE</h4>
+                    <ul>
+                        <li>
+                            <a href="https://pan.baidu.com/s/1lpkdhZua2E8bebdodcZzog?pwd=h2g8">高频GRE真题</a>
+                        </li>
+                        <li>
+                            <a href="https://pan.baidu.com/s/1XMDTgfBofnTxspWGoXPglw?pwd=2b5">GRE备考圣经</a>
+                        </li>
+                        <li>
+                            写博客
+                        </li>
+                        <li>
+                            <a href="https://pan.baidu.com/s/1xNMQ-Rdb-p4vgihxWKjgxg?pwd=3qeb">GRE资料</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">中国大学MOOC</h4>
+                        <!-- <img src="./swdt.png" width="200px"/> -->
+                        <ul>
+                            <li>
+                                
+                                <a href="https://xmind.cn">软件推荐 - [xmind]</a>
+                            </li>
+                            <li>
+                                <a href="https://www.forestapp.cc/">手绘，iPad</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">学习闪卡</h4>
+                    <!-- <img src="./card.png" width="200px"/> -->
+                    <ul>
+                        <li>
+                            身份证大小的白纸（正面记录问题，反面记录答案）
+                        </li>
+                        <li>
+                            <a href="https://quizlet.com/zh-cn">手机app - quizlet</a>
+                        </li>
+                        <li>
+                            无纸化学习 - ipad(goodnotes)
+                        </li>                       
+                    </ul>
+                </div>
+                <div class="learning-method__card">
+                    <h4 class="learning-method__head">康奈尔笔记法</h4>
+                    <!-- <img src="./card.png" width="200px"/> -->
+                    <ul>                           
+                        <li>                                
+                            身份证大小的白纸（正面记录问题，反面记录答案）
+                        </li>
+                        <li>
+                            <a href="https://www.bilibili.com/video/BV1Ct411v78j/?spm_id_from=333.337.search-card.all.click&vd_source=97a695383c4b98a4ed8b80d5fdecc716">康奈尔笔记法（提高十倍效率）</a>
+                        </li>
+                        <li>
+                            <a href="https://lsc.cornell.edu/">康奈尔大学学习策略中心</a>
+                        </li>                                                                            
+                    </ul>
+                </div>
+            </div>
+            </section>
       </div>
     </div>
 
  
-    <section>
-        <h2>资源合集</h2>
-        <h3>教师相关</h3>
-        <h3>学习相关</h3>
-        <h3>学科竞赛</h3>
-        <h3>留学相关</h3>
-        <h3>数据相关</h3>
-
-    </section>
   
   </body>
 </html>
